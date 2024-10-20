@@ -3,6 +3,9 @@ package tests;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,6 +17,8 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
 @Feature("Issue в репозитории GitHub")
+@Owner("mashlemin")
+@Severity(SeverityLevel.BLOCKER)
 @DisplayName("Проверка Issues c Lambda")
 public class GitHubLambdaTest extends TestBase {
 

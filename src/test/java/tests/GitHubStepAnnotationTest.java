@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Test;
 
 
 @Feature("Issue в репозитории GitHub")
-@Story("Поиск Issue")
 @Owner("mashlemin")
 @Severity(SeverityLevel.BLOCKER)
 @DisplayName("Проверка Issues c Step Annotation")
