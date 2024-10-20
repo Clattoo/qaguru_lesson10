@@ -15,9 +15,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
-@Feature("Issue в репозитории GitHub")
-@Owner("mashlemin")
-@Severity(SeverityLevel.BLOCKER)
+
 @DisplayName("Проверка Issues c Listener")
 public class GitHubListenerSelenideTest extends TestBase {
 
