@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
-@Feature("Проверка Issues")
+@Feature("Issue в репозитории GitHub")
 @DisplayName("Проверка Issues c Lambda")
 public class GitHubLambdaTest extends TestBase {
 

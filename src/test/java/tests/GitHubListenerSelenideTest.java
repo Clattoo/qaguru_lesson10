@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
-@Feature("Проверка Issues")
+@Feature("Issue в репозитории GitHub")
 @DisplayName("Проверка Issues c Listener")
 public class GitHubListenerSelenideTest extends TestBase {
 
