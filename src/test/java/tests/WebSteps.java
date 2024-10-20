@@ -16,32 +16,32 @@ import static tests.TestBase.repositoryName;
 
 public class WebSteps {
 
-    @Step("Открываем главную страницу GitHub")
+    @Step("Открытие главной страницы GitHub")
     public WebSteps openMainPage() {
         open("https://github.com/");
         return this;
     }
 
-    @Step("Вводим в поле поиска " + repositoryName)
+    @Step("Ввод в поле поиска " + repositoryName)
     public WebSteps searchRepository() {
         $("[placeholder='Search or jump to...']").click();
         $("#query-builder-test").setValue(repositoryName).pressEnter();
         return this;
     }
 
-    @Step("Переходим внутрь репозитория " + repositoryName)
+    @Step("Переход внутрь репозитория " + repositoryName)
     public WebSteps openRepositoryPage() {
         $(linkText(repositoryName)).click();
         return this;
     }
 
-    @Step("Открываем раздел Issue для репозитория " + repositoryName)
+    @Step("Открытие раздела Issue для репозитория " + repositoryName)
     public WebSteps openIssueTab () {
         $("#issues-tab").click();
         return this;
     }
 
-    @Step("Проверяем наличие требуемого ID Issue внутри раздела")
+    @Step("Проверка наличия требуемого ID Issue внутри раздела")
     public WebSteps checkIssueID () {
         $(withText("#" + issue)).should(Condition.exist);
         return this;
