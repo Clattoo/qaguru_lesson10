@@ -12,7 +12,6 @@ import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static org.openqa.selenium.By.linkText;
 
 @Owner("mashlemin")
 @Severity(SeverityLevel.BLOCKER)
